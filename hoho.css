@@ -1,0 +1,435 @@
+
+body {
+    background-color: #333333;
+  }  
+
+
+/*----------*/
+
+
+/*For Cards Transitions*/
+.card{
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+
+/*----------*/
+
+.fixed-size {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+
+/*----------*/
+
+
+/*HEADER*/
+.navbar {
+    background-color: black;
+    padding: 0 15px; 
+    height: 60px; 
+}
+
+.brand {
+    color: white;
+    font-size: 24px;
+    margin: 0 15px; 
+    display: flex;
+    align-items: center; 
+    height: 100%; 
+}
+
+.brand span {
+    color: red;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item {
+    background-color: black;
+    margin: 0 7px;
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 15px; 
+    line-height: 30px; 
+    color: white; 
+    text-decoration: none; 
+    display: flex; 
+    align-items: center; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(235, 23, 23, 0.8); 
+    color: white; 
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .navbar {
+        background-color: black;
+        padding: 0 10px;
+    }
+
+    .brand {
+        font-size: 20px; 
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0 5px; 
+    }
+}
+
+
+/*----------*/
+
+
+/*For Home*/
+#carouselExampleControls {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .carousel-caption h2 {
+    font-size: 2rem; 
+    font-weight: bold;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-caption {
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.7);
+    }
+  
+    .carousel-caption h2 {
+      font-size: 1.5rem; 
+    }
+  
+    .carousel-caption p {
+      font-size: 1rem; 
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .carousel-caption h2 {
+      font-size: 1.2rem; 
+    }
+  
+    .carousel-caption p {
+      font-size: 0.9rem; 
+    }
+  }  
+
+/*----------*/
+
+
+
+/*For FeaturedProducts*/
+.text-justify {
+    text-align: justify;
+}
+
+
+
+/*---------*/
+
+
+
+
+/*Gallery*/
+.gallery-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-header {
+    color:white;
+    padding: 10px 30px;
+}
+  
+.animerch-header {
+    color: white;
+    padding: 10px 20px;   
+}
+
+
+/*----------*/
+
+
+/*Products*/
+.shop {
+    background-color: #333333;
+    width: 100%;
+}
+
+.shop .shop-header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shop-header h3 {
+    color:white;
+    padding: 10px 30px;
+}
+
+.shop-header h4 {
+    color: white;
+    padding: 10px 20px;
+}
+
+.card-img-top {
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+
+/*----------*/
+
+
+
+
+
+/*For Reviews*/
+.fixed-size {
+    height: 150px;
+    width: auto;
+    object-fit: cover;
+}
+
+.testimonial-card {
+    width: 34rem;
+    margin: 0 auto; 
+}
+
+.testimonial-card img {
+    height: auto; 
+    max-height: 350px;
+    object-fit: cover; 
+}
+
+.card-body {
+    text-align: center; 
+}
+
+
+
+
+/*----------*/
+
+
+/*Contact us*/
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-box {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px;
+    background-color: #444;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.contact-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.contact-body {
+    padding: 20px;
+    color: white;
+}
+
+.contact-body h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e74c3c;
+}
+
+form .form-content {
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid lightgray;
+}
+
+form .form-content input,
+.form-content textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    transition: border-color 0.3s ease;
+}
+
+form .form-content textarea{
+    border: 2px solid #ccc;
+}
+
+form .form-content input {
+    height: 40px;
+    font-size: 17px;
+    outline: none;
+}
+
+form .form-content label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: gray;
+    transform: translateY(-50%);
+    font-size: 17px;
+    transition: .5s;
+    pointer-events: none;
+}
+
+.form-content input:focus,
+.form-content textarea:focus {
+    border-color: #e74c3c;
+    outline: none;
+}
+
+::placeholder {
+    color: #999;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .contact {
+        padding: 10px;
+    }
+    .contact-box {
+        margin: 10px;
+    }
+}
+
+.contact-body form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    transition: background-color .4s ease-in;
+}
+
+.contact-body form button:hover {
+    background-color: darkred;
+}
+
+.form-content input,
+.form-content textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+}
+.form-content input:focus,
+.form-content textarea:focus {
+    outline: none;
+    border-color: #ff0000;
+}
+form .form-content input[type="text"]:focus {
+    background-color: #555;
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.8);
+    border-color: #e74c3c; 
+}
+
+form .form-content input[type="email"]:focus {
+    background-color: #555;
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.8);
+    border-color: #e74c3c;
+}
+
+
+
+/*----------*/
+
+
+/*Footer*/
+.footer {
+    background-color: black; 
+    color: white; 
+    padding: 20px; 
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+.footer-left, .footer-right {
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.footer-left h4, .footer-right h6 {
+    margin: 5px 0; 
+}
+
+.footer-center {
+    text-align: center; 
+}
+
+.social-media {
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+    text-align: center; 
+}
+
